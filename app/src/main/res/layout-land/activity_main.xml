@@ -1,4 +1,7 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -6,18 +9,20 @@
     <edu.up.hw1.SnowmanView
         android:id="@+id/drawingSurface"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"/>
 
     <TextView
         android:id="@+id/currentDrawingElement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Current Element: Snowman"/>
+        android:text="Current Element: Snowman"
+        tools:ignore="HardcodedText" />
 
     <TextView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Red"/>
+        android:text="Red"
+        tools:ignore="HardcodedText" />
     <SeekBar
         android:id="@+id/redSeekBar"
         android:layout_width="match_parent"
@@ -26,7 +31,8 @@
 
     <TextView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Green"/>
+        android:text="Green"
+        tools:ignore="HardcodedText" />
     <SeekBar
         android:id="@+id/greenSeekBar"
         android:layout_width="match_parent"
@@ -35,7 +41,8 @@
 
     <TextView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Blue"/>
+        android:text="Blue"
+        tools:ignore="HardcodedText" />
     <SeekBar
         android:id="@+id/blueSeekBar"
         android:layout_width="match_parent"
